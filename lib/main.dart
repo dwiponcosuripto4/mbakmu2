@@ -14,6 +14,18 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Login"),
         ),
+        body: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: TextField(
+              autocorrect: false,
+              autofocus: false,
+              enableSuggestions: true,
+              enableInteractiveSelection: false,
+              obscureText: true,
+            ),
+          ),
+        ),
       ),
     );
   }
