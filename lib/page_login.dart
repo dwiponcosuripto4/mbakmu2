@@ -25,6 +25,198 @@ class Page_Login extends StatelessWidget {
                   obscureText: true,
                   //keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                      size: 20,
+                    ),
+                    border: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                      ),
+                    ),
+                    labelText: "Full Name",
+                    labelStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    hintText: "Enter Your Full Name",
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextField(
+                  autocorrect: false,
+                  autofocus: false,
+                  enableSuggestions: true,
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  //keyboardType: TextInputType.phone,
+                  textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                      size: 20,
+                    ),
+                    border: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                      ),
+                    ),
+                    labelText: "Full Name",
+                    labelStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    hintText: "Enter Your Full Name",
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextField(
+                  autocorrect: false,
+                  autofocus: false,
+                  enableSuggestions: true,
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  //keyboardType: TextInputType.phone,
+                  textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                      size: 20,
+                    ),
+                    border: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                      ),
+                    ),
+                    labelText: "Full Name",
+                    labelStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    hintText: "Enter Your Full Name",
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextField(
+                  autocorrect: false,
+                  autofocus: false,
+                  enableSuggestions: true,
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  //keyboardType: TextInputType.phone,
+                  textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                      size: 20,
+                    ),
+                    border: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                      ),
+                    ),
+                    labelText: "Full Name",
+                    labelStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    hintText: "Enter Your Full Name",
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextField(
+                  autocorrect: false,
+                  autofocus: false,
+                  enableSuggestions: true,
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  //keyboardType: TextInputType.phone,
+                  textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                      size: 20,
+                    ),
+                    border: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                      ),
+                    ),
+                    labelText: "Full Name",
+                    labelStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    hintText: "Enter Your Full Name",
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextField(
+                  autocorrect: false,
+                  autofocus: false,
+                  enableSuggestions: true,
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  //keyboardType: TextInputType.phone,
+                  textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                    icon: Icon(
+                      Icons.person,
+                      size: 20,
+                    ),
+                    border: OutlineInputBorder(),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.black,
+                      ),
+                    ),
+                    labelText: "Full Name",
+                    labelStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                    hintText: "Enter Your Full Name",
+                    hintStyle: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
                 ),
               ),
               Row(
