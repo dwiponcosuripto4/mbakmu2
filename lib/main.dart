@@ -27,16 +27,25 @@ class MyApp extends StatelessWidget {
               textAlignVertical: TextAlignVertical.bottom,
 
               decoration: InputDecoration(
-                  icon: Icon(
-                    Icons.person,
-                    size: 40,
-                  ),
-                  border: OutlineInputBorder(),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.black),
-                  ),
-                  labelText: "Full Name ",
-                  hintText: "enter your full name"),
+                icon: Icon(
+                  Icons.person,
+                  size: 40,
+                ),
+                border: OutlineInputBorder(),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.black),
+                ),
+                labelText: "Full Name ",
+                labelStyle: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+                hintText: "enter your full name",
+                hintStyle: TextStyle(
+                  color: Colors.black,
+                  fontSize: 20,
+                ),
+              ),
             ),
           ),
         ),
