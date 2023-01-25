@@ -6,10 +6,12 @@ class Menu_Utama extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-      title: Text(
-        "Menu Utama",
+      appBar: AppBar(
+        title: Text(
+          "Menu Utama",
+        ),
       ),
-    ));
+      drawer: Drawer(child: Text("")),
+    );
   }
 }

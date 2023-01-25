@@ -13,22 +13,20 @@ class Page_Login extends StatelessWidget {
         ),
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(bottom: 5, right: 30),
                 child: TextField(
                   autocorrect: false,
                   autofocus: false,
                   enableSuggestions: true,
                   enableInteractiveSelection: false,
-                  obscureText: true,
-                  //keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
                   decoration: InputDecoration(
                     icon: Icon(
                       Icons.person,
-                      size: 20,
+                      size: 40,
                     ),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
@@ -50,19 +48,17 @@ class Page_Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(bottom: 5, right: 30),
                 child: TextField(
                   autocorrect: false,
                   autofocus: false,
                   enableSuggestions: true,
                   enableInteractiveSelection: false,
-                  obscureText: true,
-                  //keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
                   decoration: InputDecoration(
                     icon: Icon(
                       Icons.person,
-                      size: 20,
+                      size: 40,
                     ),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
@@ -70,12 +66,12 @@ class Page_Login extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    labelText: "Full Name",
+                    labelText: "Name",
                     labelStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
                     ),
-                    hintText: "Enter Your Full Name",
+                    hintText: "Enter Your Name",
                     hintStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
@@ -84,19 +80,18 @@ class Page_Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(bottom: 5, right: 30),
                 child: TextField(
                   autocorrect: false,
                   autofocus: false,
                   enableSuggestions: true,
                   enableInteractiveSelection: false,
-                  obscureText: true,
-                  //keyboardType: TextInputType.phone,
+                  keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
                   decoration: InputDecoration(
                     icon: Icon(
                       Icons.person,
-                      size: 20,
+                      size: 40,
                     ),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
@@ -104,12 +99,12 @@ class Page_Login extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    labelText: "Full Name",
+                    labelText: "Phone Number",
                     labelStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
                     ),
-                    hintText: "Enter Your Full Name",
+                    hintText: "Enter Your Phone Number",
                     hintStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
@@ -118,19 +113,17 @@ class Page_Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(bottom: 5, right: 30),
                 child: TextField(
                   autocorrect: false,
                   autofocus: false,
                   enableSuggestions: true,
                   enableInteractiveSelection: false,
-                  obscureText: true,
-                  //keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
                   decoration: InputDecoration(
                     icon: Icon(
                       Icons.person,
-                      size: 20,
+                      size: 40,
                     ),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
@@ -138,12 +131,12 @@ class Page_Login extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    labelText: "Full Name",
+                    labelText: "Address",
                     labelStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
                     ),
-                    hintText: "Enter Your Full Name",
+                    hintText: "Enter Your Full Address",
                     hintStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
@@ -152,19 +145,17 @@ class Page_Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(bottom: 5, right: 30),
                 child: TextField(
                   autocorrect: false,
                   autofocus: false,
                   enableSuggestions: true,
                   enableInteractiveSelection: false,
-                  obscureText: true,
-                  //keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
                   decoration: InputDecoration(
                     icon: Icon(
                       Icons.person,
-                      size: 20,
+                      size: 40,
                     ),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
@@ -172,12 +163,12 @@ class Page_Login extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    labelText: "Full Name",
+                    labelText: "Email",
                     labelStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
                     ),
-                    hintText: "Enter Your Full Name",
+                    hintText: "Enter Your Email",
                     hintStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
@@ -186,19 +177,18 @@ class Page_Login extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.only(bottom: 5, right: 30),
                 child: TextField(
                   autocorrect: false,
                   autofocus: false,
                   enableSuggestions: true,
                   enableInteractiveSelection: false,
                   obscureText: true,
-                  //keyboardType: TextInputType.phone,
                   textAlignVertical: TextAlignVertical.bottom,
                   decoration: InputDecoration(
                     icon: Icon(
                       Icons.person,
-                      size: 20,
+                      size: 40,
                     ),
                     border: OutlineInputBorder(),
                     focusedBorder: OutlineInputBorder(
@@ -206,12 +196,12 @@ class Page_Login extends StatelessWidget {
                         color: Colors.black,
                       ),
                     ),
-                    labelText: "Full Name",
+                    labelText: "Password",
                     labelStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
                     ),
-                    hintText: "Enter Your Full Name",
+                    hintText: "Enter Your Password",
                     hintStyle: TextStyle(
                       color: Colors.black,
                       fontSize: 15,
@@ -235,7 +225,8 @@ class Page_Login extends StatelessWidget {
                     child: Text(
                       "MASUK",
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 15,
+                        color: Colors.black,
                       ),
                     ),
                   )
