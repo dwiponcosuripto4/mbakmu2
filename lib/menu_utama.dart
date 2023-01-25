@@ -11,7 +11,26 @@ class Menu_Utama extends StatelessWidget {
           "Menu Utama",
         ),
       ),
-      drawer: Drawer(child: Text("")),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.all(20),
+              width: double.infinity,
+              height: 150,
+              color: Colors.redAccent,
+              alignment: Alignment.bottomLeft,
+              child: Text(
+                "Menu",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 25,
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
