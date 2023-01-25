@@ -1,3 +1,4 @@
+import 'package:final_project_2023/menu_utama.dart';
 import 'package:flutter/material.dart';
 
 class Page_Login extends StatelessWidget {
@@ -11,38 +12,44 @@ class Page_Login extends StatelessWidget {
           title: Text("Login"),
         ),
         body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              autocorrect: false,
-              autofocus: false,
-              enableSuggestions: true,
-              enableInteractiveSelection: false,
-              obscureText: true,
-              //keyboardType: TextInputType.phone,
-              textAlignVertical: TextAlignVertical.bottom,
-
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.person,
-                  size: 40,
-                ),
-                border: OutlineInputBorder(),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
-                ),
-                labelText: "Full Name ",
-                labelStyle: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
-                hintText: "Enter Your Full Name",
-                hintStyle: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(20),
+                child: TextField(
+                  autocorrect: false,
+                  autofocus: false,
+                  enableSuggestions: true,
+                  enableInteractiveSelection: false,
+                  obscureText: true,
+                  //keyboardType: TextInputType.phone,
+                  textAlignVertical: TextAlignVertical.bottom,
                 ),
               ),
-            ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  TextButton(
+                    onPressed: (() {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: ((context) {
+                            return Menu_Utama();
+                          }),
+                        ),
+                      );
+                    }),
+                    child: Text(
+                      "MASUK",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  )
+                ],
+              )
+            ],
           ),
         ),
       ),
