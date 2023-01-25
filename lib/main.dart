@@ -1,3 +1,4 @@
+import 'package:final_project_2023/page_login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,46 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Login"),
-        ),
-        body: Center(
-          child: Padding(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              autocorrect: false,
-              autofocus: false,
-              enableSuggestions: true,
-              enableInteractiveSelection: false,
-              obscureText: true,
-              //keyboardType: TextInputType.phone,
-              textAlignVertical: TextAlignVertical.bottom,
-
-              decoration: InputDecoration(
-                icon: Icon(
-                  Icons.person,
-                  size: 40,
-                ),
-                border: OutlineInputBorder(),
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black),
-                ),
-                labelText: "Full Name ",
-                labelStyle: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
-                hintText: "enter your full name",
-                hintStyle: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
+      home: Page_Login(),
     );
   }
 }
