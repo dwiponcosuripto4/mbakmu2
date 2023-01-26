@@ -50,6 +50,11 @@ class Menu_Utama extends StatelessWidget {
                               SizedBox(
                                 height: 5,
                               ),
+                              Text(
+                                '0',
+                                style: TextStyle(
+                                    fontSize: 25, fontWeight: FontWeight.bold),
+                              )
                             ],
                           )
                         ],
