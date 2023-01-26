@@ -12,6 +12,25 @@ class Menu_Utama extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Container(
+        margin: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 2,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    radius: 35,
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text(
           "Menu Utama",
