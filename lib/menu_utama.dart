@@ -40,6 +40,18 @@ class Menu_Utama extends StatelessWidget {
                           SizedBox(
                             height: 10,
                           ),
+                          Row(
+                            children: <Widget>[
+                              Baseline(
+                                baseline: 5,
+                                baselineType: TextBaseline.alphabetic,
+                                child: Text("Rp"),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     ),
