@@ -1,10 +1,10 @@
-import 'package:final_project_2023/Riwayat.dart';
-import 'package:final_project_2023/apps_info.dart';
-import 'package:final_project_2023/help_facback.dart';
-import 'package:final_project_2023/isi_dompet.dart';
-import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/icons_menu/apps_info.dart';
+import 'package:final_project_2023/icons_menu/help_facback.dart';
+import 'package:final_project_2023/icons_menu/isi_dompet.dart';
+import 'package:final_project_2023/icons_menu/page_notification.dart';
 import 'package:final_project_2023/page_login.dart';
-import 'package:final_project_2023/setting.dart';
+import 'package:final_project_2023/icons_menu/riwayat.dart';
+import 'package:final_project_2023/icons_menu/setting.dart';
 import 'package:flutter/material.dart';
 
 class Menu_Utama extends StatelessWidget {
@@ -13,6 +13,97 @@ class Menu_Utama extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: GridView.count(
+        padding: const EdgeInsets.all(25),
+        crossAxisCount: 2,
+        children: <Widget>[
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {},
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.home,
+                      size: 70,
+                      color: Colors.blueAccent,
+                    ),
+                    Text("Home", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu_Utama()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.new_releases,
+                      size: 70,
+                      color: Colors.redAccent,
+                    ),
+                    Text("Politik", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {},
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.water_damage,
+                      size: 70,
+                      color: Colors.green,
+                    ),
+                    Text("Lingkungan", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {},
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.sports_bar,
+                      size: 70,
+                      color: Colors.black,
+                    ),
+                    Text("Gaya Hidup", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       appBar: AppBar(
         title: Text(
           "Menu Utama",
