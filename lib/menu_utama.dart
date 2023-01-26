@@ -1,5 +1,6 @@
 import 'package:final_project_2023/help_facback.dart';
 import 'package:final_project_2023/page_login.dart';
+import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
 
 class Menu_Utama extends StatelessWidget {
@@ -101,6 +102,13 @@ class Menu_Utama extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: ((context) => Setting()),
+                  ),
+                );
+              },
               leading: Icon(
                 Icons.settings,
                 size: 25,
