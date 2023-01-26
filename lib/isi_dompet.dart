@@ -1,18 +1,78 @@
 import 'package:final_project_2023/Riwayat.dart';
 import 'package:final_project_2023/apps_info.dart';
 import 'package:final_project_2023/help_facback.dart';
-import 'package:final_project_2023/isi_dompet.dart';
-import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/menu_utama.dart';
 import 'package:final_project_2023/page_login.dart';
+import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
 
-class Menu_Utama extends StatelessWidget {
-  const Menu_Utama({super.key});
+class Isi_Dompet extends StatelessWidget {
+  const Isi_Dompet({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Container(
+        margin: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 2,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    radius: 35,
+                    child: Icon(
+                      Icons.camera_alt,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(height: 3),
+                  Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Saldo Anda"),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Baseline(
+                                baseline: 5,
+                                baselineType: TextBaseline.alphabetic,
+                                child: Text("Rp"),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                '0',
+                                style: TextStyle(
+                                    fontSize: 25, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 20),
+              child: Text('Histori Transaksi'),
+            ),
+            Expanded(flex: 2, child: Container())
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text(
           "Menu Utama",
@@ -120,7 +180,7 @@ class Menu_Utama extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Isi_Dompet()),
+                    builder: ((context) => Menu_Utama()),
                   ),
                 );
               },
