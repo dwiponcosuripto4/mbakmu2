@@ -10,8 +10,21 @@ class Page_Login extends StatefulWidget {
 }
 
 class _Page_LoginState extends State<Page_Login> {
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Form(
+        key: _formKey,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(' data 1'),
+            Text('data 2'),
+          ],
+        ),
+      ),
+    );
   }
 }
