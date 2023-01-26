@@ -1,5 +1,6 @@
 import 'package:final_project_2023/Riwayat.dart';
 import 'package:final_project_2023/help_facback.dart';
+import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/page_login.dart';
 import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
@@ -63,6 +64,13 @@ class Menu_Utama extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: ((context) => Page_Notification()),
+                  ),
+                );
+              },
               leading: Icon(
                 Icons.notifications,
                 size: 25,
