@@ -1,3 +1,4 @@
+import 'package:final_project_2023/help_facback.dart';
 import 'package:final_project_2023/page_login.dart';
 import 'package:flutter/material.dart';
 
@@ -33,6 +34,13 @@ class Menu_Utama extends StatelessWidget {
               height: 20,
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: ((context) => Menu_Utama()),
+                  ),
+                );
+              },
               leading: Icon(
                 Icons.home,
                 size: 25,
@@ -120,6 +128,13 @@ class Menu_Utama extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: ((context) => Help_Facback()),
+                  ),
+                );
+              },
               leading: Icon(
                 Icons.help,
                 size: 25,
