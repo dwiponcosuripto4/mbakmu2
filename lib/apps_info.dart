@@ -1,13 +1,13 @@
 import 'package:final_project_2023/Riwayat.dart';
-import 'package:final_project_2023/apps_info.dart';
 import 'package:final_project_2023/help_facback.dart';
-import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/menu_utama.dart';
 import 'package:final_project_2023/page_login.dart';
+import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
 
-class Menu_Utama extends StatelessWidget {
-  const Menu_Utama({super.key});
+class Apps_Info extends StatelessWidget {
+  const Apps_Info({super.key});
 
   @override
   Widget build(BuildContext context) {
