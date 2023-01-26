@@ -1,3 +1,4 @@
+import 'package:final_project_2023/Riwayat.dart';
 import 'package:final_project_2023/help_facback.dart';
 import 'package:final_project_2023/page_login.dart';
 import 'package:final_project_2023/setting.dart';
@@ -82,6 +83,13 @@ class Menu_Utama extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: ((context) => Riwayat()),
+                  ),
+                );
+              },
               leading: Icon(
                 Icons.update_sharp,
                 size: 25,
