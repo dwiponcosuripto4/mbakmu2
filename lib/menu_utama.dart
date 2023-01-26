@@ -24,7 +24,26 @@ class Menu_Utama extends StatelessWidget {
                   CircleAvatar(
                     backgroundColor: Colors.grey,
                     radius: 35,
+                    child: Icon(
+                      Icons.camera_alt,
+                      color: Colors.grey,
+                    ),
                   ),
+                  SizedBox(height: 3),
+                  Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Saldo Anda"),
+                          SizedBox(
+                            height: 10,
+                          ),
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             )
