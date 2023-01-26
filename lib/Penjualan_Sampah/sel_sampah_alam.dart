@@ -28,7 +28,7 @@ class Sel_Sampah_Alam extends StatelessWidget {
                       size: 70,
                       color: Colors.blueAccent,
                     ),
-                    Text("Jual Sampah Alam", style: TextStyle(fontSize: 17.0)),
+                    Text("Jual Sampah Alam", style: TextStyle(fontSize: 15)),
                   ],
                 ),
               ),
