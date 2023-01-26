@@ -31,7 +31,7 @@ class Menu_Utama extends StatelessWidget {
                       size: 70,
                       color: Colors.blueAccent,
                     ),
-                    Text("Home", style: TextStyle(fontSize: 17.0)),
+                    Text("Sampah Organik", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
@@ -56,7 +56,82 @@ class Menu_Utama extends StatelessWidget {
                       size: 70,
                       color: Colors.redAccent,
                     ),
-                    Text("Politik", style: TextStyle(fontSize: 17.0)),
+                    Text("Sampah Alam", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu_Utama()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.new_releases,
+                      size: 70,
+                      color: Colors.redAccent,
+                    ),
+                    Text("Sampah Digital", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu_Utama()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.new_releases,
+                      size: 70,
+                      color: Colors.redAccent,
+                    ),
+                    Text("Sampah Komsumsi", style: TextStyle(fontSize: 17.0)),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Card(
+            margin: const EdgeInsets.all(8),
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Menu_Utama()));
+              },
+              splashColor: Colors.blue,
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const <Widget>[
+                    Icon(
+                      Icons.new_releases,
+                      size: 70,
+                      color: Colors.redAccent,
+                    ),
+                    Text("Sampah Padat", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
