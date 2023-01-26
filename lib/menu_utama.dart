@@ -27,7 +27,7 @@ class Menu_Utama extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
                     Icon(
-                      Icons.home,
+                      Icons.delete_forever_rounded,
                       size: 70,
                       color: Colors.blueAccent,
                     ),
@@ -52,7 +52,7 @@ class Menu_Utama extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
                     Icon(
-                      Icons.new_releases,
+                      Icons.delete_forever_outlined,
                       size: 70,
                       color: Colors.redAccent,
                     ),
@@ -77,7 +77,7 @@ class Menu_Utama extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
                     Icon(
-                      Icons.new_releases,
+                      Icons.delete_forever_sharp,
                       size: 70,
                       color: Colors.redAccent,
                     ),
@@ -102,7 +102,7 @@ class Menu_Utama extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
                     Icon(
-                      Icons.new_releases,
+                      Icons.delete_sweep,
                       size: 70,
                       color: Colors.redAccent,
                     ),
@@ -127,7 +127,7 @@ class Menu_Utama extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: const <Widget>[
                     Icon(
-                      Icons.new_releases,
+                      Icons.delete,
                       size: 70,
                       color: Colors.redAccent,
                     ),
