@@ -27,7 +27,14 @@ class Menu_Utama extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text("Home"),
+            ),
           ],
         ),
       ),
