@@ -30,7 +30,7 @@ class Page_Notification extends StatelessWidget {
       ),
       appBar: AppBar(
         title: Text(
-          "Setting",
+          "Kotak Masuk",
         ),
       ),
       drawer: Drawer(

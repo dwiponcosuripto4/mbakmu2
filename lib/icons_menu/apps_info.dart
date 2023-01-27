@@ -12,6 +12,50 @@ class Apps_Info extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Column(
+        children: [
+          ListTile(
+            leading: Icon(
+              Icons.group_work_rounded,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Panduan Komunitas",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.home_repair_service,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Ketentuan layanan",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.privacy_tip_sharp,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Kebijakan Privasi",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.h_mobiledata_sharp,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Kebijakan Hak Cipta",
+            ),
+          ),
+        ],
+      ),
       appBar: AppBar(
         title: Text(
           "Menu Utama",
