@@ -58,7 +58,7 @@ class Apps_Info extends StatelessWidget {
       ),
       appBar: AppBar(
         title: Text(
-          "Menu Utama",
+          "Tentang",
         ),
       ),
       drawer: Drawer(
