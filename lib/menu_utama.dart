@@ -215,6 +215,22 @@ class Menu_Utama extends StatelessWidget {
         title: Text(
           "Menu Utama",
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.account_circle,
+              size: 30,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(
+                  builder: ((context) => Isi_Dompet()),
+                ),
+              );
+            },
+          )
+        ],
       ),
       drawer: Drawer(
         child: Column(
