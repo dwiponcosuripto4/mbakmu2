@@ -218,9 +218,9 @@ class Menu_Utama extends StatelessWidget {
         actions: <Widget>[
           IconButton(
             icon: Icon(
-              Icons.account_circle,
+              Icons.account_circle_rounded,
               size: 30,
-              color: Colors.black,
+              color: Colors.white,
             ),
             onPressed: () {
               Navigator.of(context).pushReplacement(
@@ -239,7 +239,7 @@ class Menu_Utama extends StatelessWidget {
               padding: EdgeInsets.all(20),
               width: double.infinity,
               height: 150,
-              color: Colors.redAccent,
+              color: Colors.blue,
               alignment: Alignment.bottomLeft,
               child: Text(
                 "All Menu",

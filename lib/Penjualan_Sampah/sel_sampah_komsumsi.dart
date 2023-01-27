@@ -15,7 +15,7 @@ class Sel_Sampah_Komsumsi extends StatelessWidget {
         crossAxisCount: 2,
         children: <Widget>[
           Card(
-            margin: const EdgeInsets.all(50),
+            margin: const EdgeInsets.all(8),
             child: InkWell(
               onTap: () {},
               splashColor: Colors.blue,
