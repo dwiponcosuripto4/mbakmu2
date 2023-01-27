@@ -1,3 +1,8 @@
+import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_alam.dart';
+import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_digital.dart';
+import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_komsumsi.dart';
+import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_organik.dart';
+import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_padat.dart';
 import 'package:final_project_2023/icons_menu/apps_info.dart';
 import 'package:final_project_2023/icons_menu/help_facback.dart';
 import 'package:final_project_2023/icons_menu/isi_dompet.dart';
@@ -20,7 +25,14 @@ class Menu_Utama extends StatelessWidget {
           Card(
             margin: const EdgeInsets.all(8),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Organik_Sel(),
+                  ),
+                );
+              },
               splashColor: Colors.blue,
               child: Center(
                 child: Column(
@@ -31,7 +43,10 @@ class Menu_Utama extends StatelessWidget {
                       size: 70,
                       color: Colors.blueAccent,
                     ),
-                    Text("Sampah Organik", style: TextStyle(fontSize: 17.0)),
+                    Text(
+                      "Sampah Organik",
+                      style: TextStyle(fontSize: 17.0),
+                    ),
                   ],
                 ),
               ),
@@ -42,9 +57,11 @@ class Menu_Utama extends StatelessWidget {
             child: InkWell(
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const Menu_Utama()));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Sel_Sampah_Alam(),
+                  ),
+                );
               },
               splashColor: Colors.blue,
               child: Center(
@@ -56,7 +73,10 @@ class Menu_Utama extends StatelessWidget {
                       size: 70,
                       color: Colors.redAccent,
                     ),
-                    Text("Sampah Alam", style: TextStyle(fontSize: 17.0)),
+                    Text(
+                      "Sampah Alam",
+                      style: TextStyle(fontSize: 17.0),
+                    ),
                   ],
                 ),
               ),
@@ -67,9 +87,11 @@ class Menu_Utama extends StatelessWidget {
             child: InkWell(
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const Menu_Utama()));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Sel_Sampah_Digital(),
+                  ),
+                );
               },
               splashColor: Colors.blue,
               child: Center(
@@ -92,9 +114,11 @@ class Menu_Utama extends StatelessWidget {
             child: InkWell(
               onTap: () {
                 Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const Menu_Utama()));
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Sel_Sampah_Komsumsi(),
+                  ),
+                );
               },
               splashColor: Colors.blue,
               child: Center(
@@ -119,7 +143,8 @@ class Menu_Utama extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const Menu_Utama()));
+                      builder: (context) => const Sel_Sampah_Padat(),
+                    ));
               },
               splashColor: Colors.blue,
               child: Center(
@@ -140,7 +165,14 @@ class Menu_Utama extends StatelessWidget {
           Card(
             margin: const EdgeInsets.all(8),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Menu_Utama(),
+                  ),
+                );
+              },
               splashColor: Colors.blue,
               child: Center(
                 child: Column(
