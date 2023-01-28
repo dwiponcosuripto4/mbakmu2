@@ -8,7 +8,6 @@ import 'package:final_project_2023/icons_menu/apps_info.dart';
 import 'package:final_project_2023/icons_menu/help_facback.dart';
 import 'package:final_project_2023/icons_menu/isi_dompet.dart';
 import 'package:final_project_2023/icons_menu/page_notification.dart';
-
 import 'package:final_project_2023/icons_menu/riwayat.dart';
 import 'package:final_project_2023/icons_menu/setting.dart';
 import 'package:flutter/material.dart';

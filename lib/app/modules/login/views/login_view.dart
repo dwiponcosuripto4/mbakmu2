@@ -7,11 +7,12 @@ import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
   const LoginView({Key? key}) : super(key: key);
-  static const String _title = 'Aplikasi';
+  static const String _title = 'SelTrash';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: _title,
       home: Scaffold(
         appBar: AppBar(title: const Text(_title)),
@@ -29,6 +30,7 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+  void Login(String email, String password) async {}
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
