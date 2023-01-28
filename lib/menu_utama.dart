@@ -10,6 +10,7 @@ import 'package:final_project_2023/icons_menu/isi_dompet.dart';
 import 'package:final_project_2023/icons_menu/page_notification.dart';
 import 'package:final_project_2023/icons_menu/riwayat.dart';
 import 'package:final_project_2023/icons_menu/setting.dart';
+import 'package:final_project_2023/search.dart';
 import 'package:flutter/material.dart';
 
 class Menu_Utama extends StatelessWidget {
@@ -270,6 +271,13 @@ class Menu_Utama extends StatelessWidget {
               ),
             ),
             ListTile(
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: ((context) => Search_Page()),
+                  ),
+                );
+              },
               leading: Icon(
                 Icons.search,
                 size: 25,
