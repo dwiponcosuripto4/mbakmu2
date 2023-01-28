@@ -1,6 +1,7 @@
+import 'package:final_project_2023/app/modules/login/views/login_view.dart';
 import 'package:final_project_2023/icons_menu/help_facback.dart';
 import 'package:final_project_2023/menu_utama.dart';
-import 'package:final_project_2023/page_login.dart';
+
 import 'package:final_project_2023/icons_menu/page_notification.dart';
 import 'package:final_project_2023/icons_menu/riwayat.dart';
 import 'package:final_project_2023/icons_menu/setting.dart';
@@ -197,7 +198,7 @@ class Apps_Info extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Page_Login()),
+                    builder: ((context) => LoginView()),
                   ),
                 );
               }),

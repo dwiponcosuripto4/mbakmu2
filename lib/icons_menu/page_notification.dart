@@ -1,11 +1,12 @@
 import 'dart:ui';
 
+import 'package:final_project_2023/app/modules/login/views/login_view.dart';
 import 'package:final_project_2023/icons_menu/apps_info.dart';
 import 'package:final_project_2023/icons_menu/help_facback.dart';
 import 'package:final_project_2023/icons_menu/riwayat.dart';
 import 'package:final_project_2023/icons_menu/setting.dart';
 import 'package:final_project_2023/menu_utama.dart';
-import 'package:final_project_2023/page_login.dart';
+
 import 'package:flutter/material.dart';
 
 class Page_Notification extends StatelessWidget {
@@ -169,7 +170,7 @@ class Page_Notification extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Page_Login()),
+                    builder: ((context) => LoginView()),
                   ),
                 );
               }),
