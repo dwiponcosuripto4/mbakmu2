@@ -1,37 +1,82 @@
-import 'dart:ui';
+import 'package:final_project_2023/apps_info.dart';
+import 'package:final_project_2023/help_facback.dart';
 
-import 'package:final_project_2023/app/modules/login/views/login_view.dart';
-import 'package:final_project_2023/icons_menu/apps_info.dart';
-import 'package:final_project_2023/icons_menu/help_facback.dart';
-import 'package:final_project_2023/icons_menu/riwayat.dart';
-import 'package:final_project_2023/icons_menu/setting.dart';
 import 'package:final_project_2023/menu_utama.dart';
 
+import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/riwayat.dart';
+import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
 
-class Page_Notification extends StatelessWidget {
-  const Page_Notification({super.key});
+class Isi_Dompet extends StatelessWidget {
+  const Isi_Dompet({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          ListTile(
-            leading: Icon(
-              Icons.forward_to_inbox_outlined,
-              size: 25,
-              color: Colors.black,
+      body: Container(
+        margin: EdgeInsets.symmetric(horizontal: 20),
+        child: Column(
+          children: <Widget>[
+            Expanded(
+              flex: 2,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    radius: 35,
+                    child: Icon(
+                      Icons.camera_alt,
+                      color: Colors.grey,
+                    ),
+                  ),
+                  SizedBox(height: 3),
+                  Card(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text("Saldo Anda"),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Baseline(
+                                baseline: 5,
+                                baselineType: TextBaseline.alphabetic,
+                                child: Text("Rp"),
+                              ),
+                              SizedBox(
+                                height: 5,
+                              ),
+                              Text(
+                                '0',
+                                style: TextStyle(
+                                    fontSize: 25, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
-            title: Text(
-              "Notifikasi Sistem",
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 20),
+              child: Text('Histori Transaksi'),
             ),
-          ),
-        ],
+            Expanded(flex: 2, child: Container())
+          ],
+        ),
       ),
       appBar: AppBar(
         title: Text(
-          "Kotak Masuk",
+          "Menu Utama",
         ),
       ),
       drawer: Drawer(
@@ -170,7 +215,7 @@ class Page_Notification extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => LoginView()),
+                    builder: ((context) => Menu_Utama()),
                   ),
                 );
               }),

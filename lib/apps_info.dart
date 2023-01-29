@@ -1,10 +1,9 @@
-import 'package:final_project_2023/app/modules/login/views/login_view.dart';
-import 'package:final_project_2023/icons_menu/help_facback.dart';
+import 'package:final_project_2023/help_facback.dart';
 import 'package:final_project_2023/menu_utama.dart';
 
-import 'package:final_project_2023/icons_menu/page_notification.dart';
-import 'package:final_project_2023/icons_menu/riwayat.dart';
-import 'package:final_project_2023/icons_menu/setting.dart';
+import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/riwayat.dart';
+import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
 
 class Apps_Info extends StatelessWidget {
@@ -198,7 +197,7 @@ class Apps_Info extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => LoginView()),
+                    builder: ((context) => Menu_Utama()),
                   ),
                 );
               }),

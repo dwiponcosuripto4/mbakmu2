@@ -1,14 +1,14 @@
-import 'package:final_project_2023/app/modules/login/views/login_view.dart';
-import 'package:final_project_2023/icons_menu/apps_info.dart';
-import 'package:final_project_2023/icons_menu/page_notification.dart';
-import 'package:final_project_2023/icons_menu/riwayat.dart';
-import 'package:final_project_2023/icons_menu/setting.dart';
+import 'package:final_project_2023/apps_info.dart';
+import 'package:final_project_2023/help_facback.dart';
+
 import 'package:final_project_2023/menu_utama.dart';
+import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/riwayat.dart';
 
 import 'package:flutter/material.dart';
 
-class Help_Facback extends StatelessWidget {
-  const Help_Facback({super.key});
+class Setting extends StatelessWidget {
+  const Setting({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,29 +17,79 @@ class Help_Facback extends StatelessWidget {
         children: [
           ListTile(
             leading: Icon(
-              Icons.help,
+              Icons.account_circle,
               size: 25,
               color: Colors.black,
             ),
             title: Text(
-              "Pusat Bantuan",
+              "Pengaturan Akun",
             ),
           ),
           ListTile(
             leading: Icon(
-              Icons.security_rounded,
+              Icons.private_connectivity_outlined,
               size: 25,
               color: Colors.black,
             ),
             title: Text(
-              "Pusat Keamanan",
+              "Privasi",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.security,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Keamanan",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.analytics_outlined,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Analisis",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.share,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Bagikan Profil",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.sort_by_alpha_sharp,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Bahasa",
+            ),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.report_gmailerrorred_outlined,
+              size: 25,
+              color: Colors.black,
+            ),
+            title: Text(
+              "Laporkan Masalah",
             ),
           ),
         ],
       ),
       appBar: AppBar(
         title: Text(
-          "Dukungan",
+          "Setting",
         ),
       ),
       drawer: Drawer(
@@ -178,7 +228,7 @@ class Help_Facback extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => LoginView()),
+                    builder: ((context) => Menu_Utama()),
                   ),
                 );
               }),

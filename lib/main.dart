@@ -1,9 +1,11 @@
-import 'package:final_project_2023/app/modules/login/views/login_view.dart';
-
 import 'package:flutter/material.dart';
 
+import 'package:get/get.dart';
+
+import 'app/routes/app_pages.dart';
+
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,9 +13,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginView(),
+    return GetMaterialApp(
+      title: "Application",
+      initialRoute: Routes.HOME,
+      getPages: AppPages.routes,
     );
   }
 }

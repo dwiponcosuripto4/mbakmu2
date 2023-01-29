@@ -1,16 +1,16 @@
-import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_alam.dart';
-import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_digital.dart';
-import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_komsumsi.dart';
-import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_organik.dart';
-import 'package:final_project_2023/Penjualan_Sampah/sel_sampah_padat.dart';
-import 'package:final_project_2023/app/modules/login/views/login_view.dart';
-import 'package:final_project_2023/icons_menu/apps_info.dart';
-import 'package:final_project_2023/icons_menu/help_facback.dart';
-import 'package:final_project_2023/icons_menu/isi_dompet.dart';
-import 'package:final_project_2023/icons_menu/page_notification.dart';
-import 'package:final_project_2023/icons_menu/riwayat.dart';
-import 'package:final_project_2023/icons_menu/setting.dart';
-import 'package:final_project_2023/search.dart';
+import 'package:final_project_2023/apps_info.dart';
+import 'package:final_project_2023/help_facback.dart';
+
+import 'package:final_project_2023/isi_dompet.dart';
+import 'package:final_project_2023/page_notification.dart';
+import 'package:final_project_2023/riwayat.dart';
+
+import 'package:final_project_2023/sel_sampah_alam.dart';
+import 'package:final_project_2023/sel_sampah_digital.dart';
+import 'package:final_project_2023/sel_sampah_komsumsi.dart';
+import 'package:final_project_2023/sel_sampah_organik.dart';
+import 'package:final_project_2023/sel_sampah_padat.dart';
+import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
 
 class Menu_Utama extends StatelessWidget {
@@ -274,7 +274,7 @@ class Menu_Utama extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Search_Page()),
+                    builder: ((context) => Menu_Utama()),
                   ),
                 );
               },
@@ -376,7 +376,7 @@ class Menu_Utama extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => LoginView()),
+                    builder: ((context) => Menu_Utama()),
                   ),
                 );
               }),
