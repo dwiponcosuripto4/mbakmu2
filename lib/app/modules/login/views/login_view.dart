@@ -1,3 +1,4 @@
+import 'package:final_project_2023/menu_utama.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -23,6 +24,21 @@ class LoginView extends GetView<LoginController> {
             TextField(
               controller: passC,
               decoration: InputDecoration(labelText: "Password"),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: ((context) {
+                      return Menu_Utama();
+                    }),
+                  ),
+                );
+              },
+              child: Text("Login"),
             )
           ],
         ));

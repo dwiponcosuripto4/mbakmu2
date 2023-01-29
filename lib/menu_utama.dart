@@ -1,3 +1,4 @@
+import 'package:final_project_2023/app/modules/login/views/login_view.dart';
 import 'package:final_project_2023/apps_info.dart';
 import 'package:final_project_2023/help_facback.dart';
 
@@ -376,7 +377,7 @@ class Menu_Utama extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Menu_Utama()),
+                    builder: ((context) => LoginView()),
                   ),
                 );
               }),
