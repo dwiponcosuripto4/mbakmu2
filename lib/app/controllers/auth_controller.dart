@@ -7,6 +7,6 @@ class AuthController extends GetxController {
   Stream<User?> get streamAuthStatus => auth.authStateChanges();
 
   void signup() {}
-  void login() {}
+  void login(String email, String password) {}
   void logout() {}
 }

@@ -1,3 +1,4 @@
+import 'package:final_project_2023/app/controllers/auth_controller.dart';
 import 'package:final_project_2023/menu_utama.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +9,8 @@ import '../controllers/login_controller.dart';
 class LoginView extends GetView<LoginController> {
   final emailC = TextEditingController();
   final passC = TextEditingController();
+
+  final authC = Get.find<AuthController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,15 +32,7 @@ class LoginView extends GetView<LoginController> {
               height: 50,
             ),
             ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: ((context) {
-                      return Menu_Utama();
-                    }),
-                  ),
-                );
-              },
+              onPressed: () => authC.login(emailC.text, passC.text),
               child: Text("Login"),
             )
           ],
