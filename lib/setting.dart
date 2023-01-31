@@ -1,7 +1,7 @@
+import 'package:final_project_2023/app/modules/home/views/home_view.dart';
 import 'package:final_project_2023/apps_info.dart';
 import 'package:final_project_2023/help_facback.dart';
 
-import 'package:final_project_2023/menu_utama.dart';
 import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/riwayat.dart';
 
@@ -116,7 +116,7 @@ class Setting extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Menu_Utama()),
+                    builder: ((context) => HomeView()),
                   ),
                 );
               },
@@ -194,7 +194,7 @@ class Setting extends StatelessWidget {
               onTap: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Menu_Utama()),
+                    builder: ((context) => HomeView()),
                   ),
                 );
               },
@@ -228,7 +228,7 @@ class Setting extends StatelessWidget {
               onTap: (() {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: ((context) => Menu_Utama()),
+                    builder: ((context) => HomeView()),
                   ),
                 );
               }),
