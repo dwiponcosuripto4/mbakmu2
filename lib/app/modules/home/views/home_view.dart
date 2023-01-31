@@ -128,6 +128,10 @@ class HomeView extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Padding(padding: EdgeInsets.all(8.0)),
+              SizedBox(
+                height: 200,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -175,27 +179,95 @@ class HomeView extends StatelessWidget {
                         ],
                       )),
                   ElevatedButton(
-                      onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.white,
-                          foregroundColor: Colors.blueGrey),
-                      child: Column(
-                        children: [
-                          Icon(
-                            Icons.water_damage,
-                            size: 70,
-                            color: Colors.green,
-                          ),
-                          Text(
-                            "Lingkungan",
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 15,
-                                fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      )),
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.blueGrey),
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.water_damage,
+                          size: 70,
+                          color: Colors.green,
+                        ),
+                        Text(
+                          "Lingkungan",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              "Produk Daur Ulang",
+                              style: TextStyle(fontSize: 20),
+                            ),
+                            SizedBox(
+                              width: 80,
+                            ),
+                            Row(
+                              children: [
+                                TextButton(
+                                  onPressed: () {},
+                                  child: Text(
+                                    "Lihat Semua",
+                                    style:
+                                        TextStyle(color: Colors.redAccent[700]),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Container(
+                height: 2,
+                color: Colors.grey[300],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Container(
+                  child: Row(
+                    children: [
+                      Image.network(
+                        "http://2.bp.blogspot.com/-Gfk8BVfzO7c/Uo6_sa4z1jI/AAAAAAAAAGc/83SHk5fU3ro/s1600/tas-daur-ulang.jpg",
+                        height: 200,
+                        width: 360,
+                      ),
+                      Image.network(
+                        "http://3.bp.blogspot.com/-co3AjsAN_5I/Tdcqfr-FmXI/AAAAAAAAABg/xW68OX7uEQg/s1600/kerajinan+kertas+daur+ulang.jpg",
+                        height: 200,
+                        width: 360,
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
