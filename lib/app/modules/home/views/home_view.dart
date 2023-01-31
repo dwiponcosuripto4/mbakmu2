@@ -59,7 +59,54 @@ class HomeView extends StatelessWidget {
                 ],
               ),
             ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Point Anda",
+                      style: TextStyle(
+                          fontSize: 35,
+                          height: 2,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                Icon(
+                  Icons.paid_rounded,
+                  color: Colors.yellow,
+                  size: 30,
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  "3000",
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.white,
+                  ),
+                ),
+              ],
+            ),
           ),
+          // Expanded(
+          //   child: Row(
+          //     children: [
+          //       Column(
+          //         children: [
+          //           Text(
+          //             "Point Anda",
+          //             style: TextStyle(fontSize: 35),
+          //           )
+          //         ],
+          //       ),
+          //     ],
+          //   ),
+          // ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
