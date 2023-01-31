@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:final_project_2023/menu_utama.dart';
 
 class Sel_Sampah_Komsumsi extends StatelessWidget {
   const Sel_Sampah_Komsumsi({super.key});

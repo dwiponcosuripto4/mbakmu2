@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:final_project_2023/menu_utama.dart';
 
 class Organik_Sel extends StatelessWidget {
   const Organik_Sel({super.key});
