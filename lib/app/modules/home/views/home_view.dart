@@ -24,20 +24,44 @@ class HomeView extends StatelessWidget {
         centerTitle: false,
         backgroundColor: Color.fromARGB(255, 27, 198, 225),
         elevation: 0,
+        actions: [
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              margin: const EdgeInsets.only(right: 20),
+              width: 30,
+              height: 30,
+              child: Column(
+                children: const <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(7.0),
+                  ),
+                  Icon(
+                    Icons.search,
+                    size: 35,
+                    color: Colors.white,
+                  )
+                ],
+              ),
+            ),
+          )
+        ],
       ),
-      body: Stack(children: [
-        Container(
-          height: 250,
-          decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [
-            Color.fromARGB(255, 27, 198, 225),
-            Color.fromARGB(255, 8, 130, 163),
-          ])),
-          // height: 250,
-          // width: Get.width,
-          // color: Color.fromARGB(255, 27, 198, 225),
-        ),
-      ]),
+      body: Stack(
+        children: [
+          Container(
+            height: 250,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromARGB(255, 27, 198, 225),
+                  Color.fromARGB(255, 8, 130, 163),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
       drawer: Drawer(
         child: Column(
           children: [
