@@ -76,11 +76,14 @@ class HomeView extends StatelessWidget {
                         Icon(
                           Icons.update_sharp,
                           size: 70,
+                          color: Colors.black,
                         ),
                         Text(
                           "   Riwayat   ",
                           style: TextStyle(
-                              fontSize: 17, fontWeight: FontWeight.bold),
+                              color: Colors.black,
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
@@ -95,11 +98,14 @@ class HomeView extends StatelessWidget {
                           Icon(
                             Icons.delete,
                             size: 70,
+                            color: Colors.redAccent[700],
                           ),
                           Text(
                             "Jenis Sampah",
                             style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold),
+                                color: Colors.black,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
                           )
                         ],
                       )),
@@ -113,11 +119,14 @@ class HomeView extends StatelessWidget {
                           Icon(
                             Icons.water_damage,
                             size: 70,
+                            color: Colors.green,
                           ),
                           Text(
                             "Lingkungan",
                             style: TextStyle(
-                                fontSize: 15, fontWeight: FontWeight.bold),
+                                color: Colors.black,
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold),
                           )
                         ],
                       )),
