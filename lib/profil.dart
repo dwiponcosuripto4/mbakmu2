@@ -6,10 +6,10 @@ class Profil_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: new AppBar(
-        title: new Text('My Profil'),
-        centerTitle: true,
-        backgroundColor: Color.fromARGB(255, 84, 192, 142),
+      appBar: AppBar(
+        title: Text('My Profil'),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
       ),
       body: ListView(
         children: <Widget>[

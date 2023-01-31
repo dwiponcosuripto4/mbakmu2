@@ -1,10 +1,8 @@
 import 'package:final_project_2023/app/modules/home/views/home_view.dart';
 import 'package:final_project_2023/apps_info.dart';
-
 import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/riwayat.dart';
 import 'package:final_project_2023/setting.dart';
-
 import 'package:flutter/material.dart';
 
 class Help_Facback extends StatelessWidget {
@@ -13,6 +11,13 @@ class Help_Facback extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Dukungan",
+        ),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
+      ),
       body: Column(
         children: [
           ListTile(
@@ -36,11 +41,6 @@ class Help_Facback extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      appBar: AppBar(
-        title: Text(
-          "Dukungan",
-        ),
       ),
       drawer: Drawer(
         child: Column(

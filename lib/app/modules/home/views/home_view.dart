@@ -8,7 +8,6 @@ import 'package:final_project_2023/profil.dart';
 import 'package:final_project_2023/riwayat.dart';
 import 'package:final_project_2023/setting.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

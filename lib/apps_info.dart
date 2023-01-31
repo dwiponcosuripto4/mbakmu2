@@ -11,6 +11,13 @@ class Apps_Info extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Tentang",
+        ),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
+      ),
       body: Column(
         children: [
           ListTile(
@@ -54,11 +61,6 @@ class Apps_Info extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      appBar: AppBar(
-        title: Text(
-          "Tentang",
-        ),
       ),
       drawer: Drawer(
         child: Column(

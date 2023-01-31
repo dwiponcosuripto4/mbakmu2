@@ -8,6 +8,8 @@ class Jenisa_Sampah extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Jenis-Jenis Sampah"),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
       ),
       body: GridView.count(
         padding: const EdgeInsets.all(25),

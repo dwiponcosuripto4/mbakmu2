@@ -13,6 +13,13 @@ class Page_Notification extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Kotak Masuk",
+        ),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
+      ),
       body: Column(
         children: [
           ListTile(
@@ -26,11 +33,6 @@ class Page_Notification extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      appBar: AppBar(
-        title: Text(
-          "Kotak Masuk",
-        ),
       ),
       drawer: Drawer(
         child: Column(

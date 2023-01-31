@@ -1,7 +1,6 @@
 import 'package:final_project_2023/app/modules/home/views/home_view.dart';
 import 'package:final_project_2023/apps_info.dart';
 import 'package:final_project_2023/help_facback.dart';
-
 import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/riwayat.dart';
 import 'package:final_project_2023/setting.dart';
@@ -77,6 +76,8 @@ class Isi_Dompet extends StatelessWidget {
         title: Text(
           "Menu Utama",
         ),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
       ),
       drawer: Drawer(
         child: Column(

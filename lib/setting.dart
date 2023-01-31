@@ -13,6 +13,13 @@ class Setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Setting",
+        ),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
+      ),
       body: Column(
         children: [
           ListTile(
@@ -86,11 +93,6 @@ class Setting extends StatelessWidget {
             ),
           ),
         ],
-      ),
-      appBar: AppBar(
-        title: Text(
-          "Setting",
-        ),
       ),
       drawer: Drawer(
         child: Column(
