@@ -26,10 +26,10 @@ class Login_Viuw extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "Selamat Datang",
+          "Welcome",
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
         ),
-        Text("Mari Lestarikan Lingkungan"),
+        Text("Silahkan Masukkan Email dan Password"),
       ],
     );
   }
