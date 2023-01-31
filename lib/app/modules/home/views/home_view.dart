@@ -69,7 +69,7 @@ class HomeView extends StatelessWidget {
                       "Point Anda",
                       style: TextStyle(
                           fontSize: 35,
-                          height: 2,
+                          height: 2.5,
                           color: Colors.white,
                           fontWeight: FontWeight.bold),
                     ),
@@ -88,6 +88,24 @@ class HomeView extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
+                  ),
+                ),
+                SizedBox(
+                  height: 4,
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    "Tukar Point",
+                    style: TextStyle(fontSize: 20),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    shape: StadiumBorder(),
+                    padding: EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 20,
+                    ),
+                    backgroundColor: Colors.yellow[700],
                   ),
                 ),
               ],
