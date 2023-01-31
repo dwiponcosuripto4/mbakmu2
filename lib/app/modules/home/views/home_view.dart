@@ -60,6 +60,71 @@ class HomeView extends StatelessWidget {
               ),
             ),
           ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ElevatedButton(
+                    onPressed: () async {},
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: Colors.blueGrey),
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.update_sharp,
+                          size: 70,
+                        ),
+                        Text(
+                          "   Riwayat   ",
+                          style: TextStyle(
+                              fontSize: 17, fontWeight: FontWeight.bold),
+                        )
+                      ],
+                    ),
+                  ),
+                  ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.blueGrey),
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.delete,
+                            size: 70,
+                          ),
+                          Text(
+                            "Jenis Sampah",
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      )),
+                  ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.blueGrey),
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.water_damage,
+                            size: 70,
+                          ),
+                          Text(
+                            "Lingkungan",
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold),
+                          )
+                        ],
+                      )),
+                ],
+              ),
+            ],
+          ),
         ],
       ),
       drawer: Drawer(
