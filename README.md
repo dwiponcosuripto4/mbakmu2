@@ -16,7 +16,12 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ===========================Penjelasan Aplikasi===============================
-Aplikasi berbasis web adalah aplikasi yang dibuat dalam bahasa markup dan membutuhkan web server serta browser, dapat diakses melalui web browser saat tersambung dengan jaringan internet maupun intranet. Aplikasi lebih banyak digunakan karena lebih mudah dan dapat diimplementasikan di berbagai kebutuhan.
+deskripsi singkat aplikasi: aplikasi yang saya rancang adalah aplikasi mobile kebersihan untukmu atau bisa disebut
+   dengan Mbakmu aplikasi ini dirancang untuk mengurangi pencemaran sampah dan mencegah pembuangan sampah di sembrang
+   tempat dengan adanya aplikasi ini orang-orang tidak perlu lagi membuang sampahnya di sembarang tempat karna aplikasi
+   ini menyediakan ffitur penjualan sampah yang bisa di daur ulang tidak hanya itu aplikasi ini dapat menghasilkan uang
+   hanya dengan mengumpulkan sampah sehinnga orang-orang bisa bersemangat dalam mengumpulkan sampah karena dengan 
+   mengumpulkan sampah orang dapat menhasilkan koin yang dapat ditukarkan menjadi cuan dan barang hasil daur ulang sampah
 
 berhubung disini tema aplikasi tentng kebersihan kota maka saya merancang aplikasi penjualan sampah yang bisa di daur ulang contoh sampah organik, sampah padat, dan sampah alam. di aplikasi saya sendiri memiliki beberapa fitur yaitu:
 1.fitur All Menu yang berisi beberapa fitur di ataranya:
@@ -38,7 +43,17 @@ berhubung disini tema aplikasi tentng kebersihan kota maka saya merancang aplika
     -Fitur help & Facback: Fitur ini berfungsi untuk membantu user atau pengguna apabila kesusahan dalam menggunakan 
      aplikasi
 2.Fitur Menu Utama berisi digunakan untuk memilih sampah yang ingin di jual di menu ini juga memiliki beberapa pilihan fitur yaitu fitur sampah organik, fitur sampah padat, fitur sampah komsumsi, fitur sampah alam fitur ini di buat bertujuan agar pengguna dipermuda saat mau melakukan penjualan sampah karna pengguna atau user dapat membedakan sampah dengan muda dengan adanya fitur ini di masing2 fitur sampah ada jenis gambar sampah untuk mempermuda masyarakat membedakan yang mana sampah organik, padat, komsumsi, dan sampah alam.
-3.Fitur Account disini berisi info akun dan info semua saldo dari hasil penjulana sampah oleh pengguna atau user.
+3.Fitur Account disini berisikan tentang info akun (Nama & ID Pengguna aplikasi) serta terdapat 2 widget didalamnya, yakni widget 'Status' & 'Point'
+4.Fitur Sell Or Recycle didalamnya terdapat form yang harus diisikan oleh pengguna, yakni antara lain name, email, jenis sampah yang akan dijual, jenis kendaraan yang mengangkut, serta alamat. yang kesemua data itu harus tersubmit
+5.Fitur Notification berisikan notificasi sistem dari kotak masuk pengguna
+6.Fitur Apps Info didalamnya terdapat class listTile yang berisikan panduan komunitas, ketentuan layanan. kebijakan privasi, dan hak cipta.
+7.Fitur Riwayat berisikan menu lokasi, hari, dan jam yang ke semua itu bisa dilihat oleh pengguna sebagai acuan untuk data penjualan sampah
+8.Fitur isi dompet terdapat widget card yang berisikan saldo dari pengguna aplikasi
+9.Fitur setting didalmnya pengguna bisa mengatur menu-menu serta pilihan yang ingin diatur
+10.Fitur Tukar point berisikan tampilan data dari poin yang sudah dihasilkan, dengan bertujuan untuk penukaran dari seluruh saldo/dana yang nantinya bisa ditukar oleh pengguna.
+11.Fitur Riwayat menjelaskan mengenai riwayat dari  hasil penjualan sampah oleh pengguna aplikasi
+12.Jenis sampah terdapat beberapa menu fitur seperti halnya sampah organik, alam, digital, konsumsi, dan padat. yang kesemua itu bisa di inputkan datanya oleh pengguna.
+13.Fitur Help & Feedback adalah fitur yang membantu pengguna dalam menyelesaikan masalah
 
 =======================================User Story======================================
 1.user dapat membedakan jenis2 sampah yang mana sampah organik dan yang mana sampah padat, komsumsi, dan alam.

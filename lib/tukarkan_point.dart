@@ -8,7 +8,8 @@ class Penukaran_Point extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("My Saldo"),
-        backgroundColor: Color.fromARGB(255, 91, 185, 114),
+        centerTitle: false,
+        backgroundColor: Color.fromARGB(255, 27, 198, 225),
       ),
       body: Container(
         margin: EdgeInsets.symmetric(horizontal: 0),

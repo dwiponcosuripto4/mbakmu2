@@ -6,7 +6,9 @@ import 'package:final_project_2023/jenis_sampah.dart';
 import 'package:final_project_2023/page_notification.dart';
 import 'package:final_project_2023/profil.dart';
 import 'package:final_project_2023/riwayat.dart';
+import 'package:final_project_2023/sel_rsycle.dart';
 import 'package:final_project_2023/setting.dart';
+import 'package:final_project_2023/tukarkan_point.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
@@ -89,7 +91,13 @@ class HomeView extends StatelessWidget {
                   height: 4,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: ((context) {
+                        return Penukaran_Point();
+                      })),
+                    );
+                  },
                   child: Text(
                     "Tukar Point",
                     style: TextStyle(fontSize: 20),
@@ -166,7 +174,13 @@ class HomeView extends StatelessWidget {
                         ],
                       )),
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: ((context) {
+                          return Sel_Ryscle();
+                        })),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.blueGrey),
