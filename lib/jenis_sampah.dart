@@ -121,46 +121,6 @@ class Jenisa_Sampah extends StatelessWidget {
               ),
             ),
           ),
-          Card(
-            margin: const EdgeInsets.all(8),
-            child: InkWell(
-              onTap: () {},
-              splashColor: Colors.blue,
-              child: Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.water_damage,
-                      size: 70,
-                      color: Colors.green,
-                    ),
-                    Text("Lingkungan", style: TextStyle(fontSize: 17.0)),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          Card(
-            margin: const EdgeInsets.all(8),
-            child: InkWell(
-              onTap: () {},
-              splashColor: Colors.blue,
-              child: Center(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.sports_bar,
-                      size: 70,
-                      color: Colors.black,
-                    ),
-                    Text("Gaya Hidup", style: TextStyle(fontSize: 17.0)),
-                  ],
-                ),
-              ),
-            ),
-          ),
         ],
       ),
     );
