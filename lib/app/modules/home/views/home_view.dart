@@ -244,13 +244,38 @@ class HomeView extends StatelessWidget {
                     children: [
                       Image.network(
                         "http://2.bp.blogspot.com/-Gfk8BVfzO7c/Uo6_sa4z1jI/AAAAAAAAAGc/83SHk5fU3ro/s1600/tas-daur-ulang.jpg",
-                        height: 200,
-                        width: 360,
+                        height: 280,
+                        width: 400,
                       ),
                       Image.network(
                         "http://3.bp.blogspot.com/-co3AjsAN_5I/Tdcqfr-FmXI/AAAAAAAAABg/xW68OX7uEQg/s1600/kerajinan+kertas+daur+ulang.jpg",
-                        height: 200,
-                        width: 360,
+                        height: 280,
+                        width: 400,
+                      ),
+                      Image.network(
+                        "https://4.bp.blogspot.com/-SQB7n8OfQHg/VJkYhLWpVYI/AAAAAAAAAuY/1llzQIzPd24/s1600/Produk%2BDaur%2BUlang%2BSampah%2BPlastik.jpg",
+                        height: 280,
+                        width: 400,
+                      ),
+                      Image.network(
+                        "https://sciencefictiontwin.com/wp-content/uploads/2021/06/tong-sampah.jpg",
+                        height: 280,
+                        width: 400,
+                      ),
+                      Image.network(
+                        "http://3.bp.blogspot.com/-co3AjsAN_5I/Tdcqfr-FmXI/AAAAAAAAABg/xW68OX7uEQg/s1600/kerajinan+kertas+daur+ulang.jpg",
+                        height: 280,
+                        width: 400,
+                      ),
+                      Image.network(
+                        "http://3.bp.blogspot.com/-co3AjsAN_5I/Tdcqfr-FmXI/AAAAAAAAABg/xW68OX7uEQg/s1600/kerajinan+kertas+daur+ulang.jpg",
+                        height: 280,
+                        width: 400,
+                      ),
+                      Image.network(
+                        "http://3.bp.blogspot.com/-co3AjsAN_5I/Tdcqfr-FmXI/AAAAAAAAABg/xW68OX7uEQg/s1600/kerajinan+kertas+daur+ulang.jpg",
+                        height: 280,
+                        width: 400,
                       ),
                     ],
                   ),

@@ -10,6 +10,7 @@ dependencies:
   dependencies: any
   firebase_core: 2.4.1
   firebase_auth: ^4.2.5
+  
   get_cli: ^0.2.30
   get: 4.6.5
   flutter: 
