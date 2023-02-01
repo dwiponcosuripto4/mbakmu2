@@ -1,3 +1,4 @@
+import 'package:final_project_2023/app/modules/home/views/home_view.dart';
 import 'package:flutter/material.dart';
 
 class Profil_Page extends StatelessWidget {
@@ -7,6 +8,14 @@ class Profil_Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pushReplacement(
+            MaterialPageRoute(
+              builder: ((context) => const HomeView()),
+            ),
+          ),
+        ),
         title: Text('My Profil'),
         centerTitle: false,
         backgroundColor: Color.fromARGB(255, 27, 198, 225),

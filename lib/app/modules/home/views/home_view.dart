@@ -125,7 +125,7 @@ class HomeView extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.update_sharp,
-                          size: 70,
+                          size: 60,
                           color: Colors.black,
                         ),
                         Text(
@@ -153,7 +153,7 @@ class HomeView extends StatelessWidget {
                         children: [
                           Icon(
                             Icons.delete,
-                            size: 70,
+                            size: 60,
                             color: Colors.redAccent[700],
                           ),
                           Text(
@@ -173,12 +173,12 @@ class HomeView extends StatelessWidget {
                     child: Column(
                       children: [
                         Icon(
-                          Icons.water_damage,
-                          size: 70,
-                          color: Colors.green,
+                          Icons.shopping_cart,
+                          size: 60,
+                          color: Colors.grey,
                         ),
                         Text(
-                          "Lingkungan",
+                          "Sell Or Recycle",
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 15,
@@ -263,22 +263,21 @@ class HomeView extends StatelessWidget {
       drawer: Drawer(
         child: Column(
           children: [
-            Container(
-              padding: EdgeInsets.all(20),
-              width: double.infinity,
-              height: 150,
-              color: Colors.blue,
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                "All Menu",
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 25,
+            UserAccountsDrawerHeader(
+              accountName: Text('Asrul'),
+              accountEmail: Text('Asrul@gmail.com'),
+              currentAccountPicture: CircleAvatar(
+                child: ClipOval(
+                  child: Image.network(
+                      'https://3.bp.blogspot.com/-IJVaE97uai0/XZJsA9nVtKI/AAAAAAAAOjs/d3csOqO6VHsAHIpvrbUO8UbRxmzxXGvzACLcBGAsYHQ/w914-h514-p-k-no-nu/hayabusa-shadow-of-obscurity-skin-mobile-legends-uhdpaper.com-4K-5.1100-wp.thumbnail.jpg'),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 20,
+              // ignore: prefer_const_constructors
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.vBS6KE9tfLaC99-3fetrtgHaLH&pid=Api&P=0'),
+                      fit: BoxFit.cover)),
             ),
             ListTile(
               onTap: () {
