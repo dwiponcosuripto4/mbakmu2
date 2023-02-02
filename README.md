@@ -72,6 +72,6 @@ tujuan aplikasi ini adalah menghidari pencemaran sampah dan mengajarkan masyarak
 2.web FireStore
 3.InnoSetup
     
-    pw dan username
+    pw dan username aplikasi
     teslogin@gmail.com
     123123

@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 import 'package:final_project_2023/app/controllers/auth_controller.dart';
 import 'package:final_project_2023/app/modules/home/views/home_view.dart';
+import 'package:final_project_2023/app/modules/login/views/login_view.dart';
 import 'package:final_project_2023/loading_view.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
               title: "Application",
               //initialRoute: snapshot.data != null ? Routes.HOME : Routes.LOGIN,
               getPages: AppPages.routes,
-              home: snapshot.data != null ? HomeView() : HomeView(),
+              home: snapshot.data != null ? Login_Viuw() : Login_Viuw(),
             );
           }
           return LoadingView();
